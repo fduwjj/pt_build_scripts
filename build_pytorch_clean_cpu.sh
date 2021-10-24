@@ -1,3 +1,4 @@
+#!/bin/bash
 git clean -xfd && git submodule foreach git clean -xf
 git submodule sync ; git submodule update --init --recursive
 python setup.py clean
